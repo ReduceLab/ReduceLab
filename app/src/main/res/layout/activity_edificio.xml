@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edificio_screen_backround"
+    tools:context=".EdificioActivity">
+
+    <TextView
+        android:id="@+id/textView_infoCanecas2"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+
+        android:layout_marginEnd="106dp"
+
+        android:layout_marginBottom="350dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="monospace"
+        android:includeFontPadding="false"
+        android:textAlignment="center"
+        android:textColor="#505050"
+        android:textSize="17.5sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCanecaRoja"
+        android:layout_width="105dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="1.32"
+        android:scaleY="1.17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCanecaGris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/caneca_roja" />
+
+    <ImageButton
+        android:id="@+id/btnCanecaNaranja"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="1.32"
+        android:scaleY="1.17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCanecaGris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/caneca_naranja" />
+
+    <ImageButton
+        android:id="@+id/btnCanecaBlanca"
+        android:layout_width="105dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="1.32"
+        android:scaleY="1.17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCanecaVerde5"
+        app:srcCompat="@drawable/caneca_blanca" />
+
+    <ImageButton
+        android:id="@+id/btnCanecaAmarilla"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="1.32"
+        android:scaleY="1.17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/caneca_amarilla" />
+
+    <ImageButton
+        android:id="@+id/btnEdiAtras"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="684dp"
+        android:backgroundTint="#FDFDFD"
+        android:scaleType="fitXY"
+        android:scaleX="2.5"
+        android:scaleY="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_atras" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".PresentationActivity">
+
+    <ImageButton
+        android:id="@+id/btnAtrasQnsms"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="355dp"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitXY"
+        android:scaleX="2.5"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_atras" />
+
+    <TextView
+        android:id="@+id/txtQnsms"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="sans-serif-black"
+        android:text="QUIÉNES SOMOS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAtrasQnsms"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProyecto"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="30dp"
+        android:text="A partir de la observación de la problemática de la correcta separación y uso de los residuos sólidos en nuestra institución educativa, decidimos formular un proyecto en torno al objetivo de concientizar sobre una razón muy importante del deterioro del medio ambiente, los cuales son los residuos sólidos, teniendo como objetivo inicial nuestra institución educativa y en un futuro expandir el alcance a toda Colombia. "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQnsms" />
+
+    <TextView
+        android:id="@+id/txtPresentacion"
+        android:layout_width="347dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+        android:text="Así que en la participación del área de soluciones tecnológicas a problemas ambientales del Concurso Nacional de Programación formamos un equipo de 5 estudiantes del grado 11 de la Comunidad Colegio Jesús María en Medellín, Colombia. A continuación nuestros perfiles y roles:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProyecto" />
+
+    <LinearLayout
+        android:id="@+id/lytNatalia"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPresentacion">
+
+        <ImageView
+            android:id="@+id/imgNatalia"
+            android:layout_width="230dp"
+            android:layout_height="154dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/natalia" />
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNatalia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Natalia Naranjo Rodríguez"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtNatyDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Líder, programadora e investigadora."
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytAna"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytNatalia">
+
+        <ImageView
+            android:id="@+id/imgAna"
+            android:layout_width="230dp"
+            android:layout_height="154dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/analu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ana Lucía Pineda Siegert"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtAnaDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programadora y vigía del tiempo."
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytAleja"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytAna">
+
+        <ImageView
+            android:id="@+id/imgAleja"
+            android:layout_width="230dp"
+            android:layout_height="154dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/aleja" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAleja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Maria Alejandra Jaramillo Hernández"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtAlejaDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diseñadora y programadora."
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytMariana"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytAleja">
+
+        <ImageView
+            android:id="@+id/imgMariana"
+            android:layout_width="230dp"
+            android:layout_height="154dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMariana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Mariana Zapata Quiros"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtMarianaDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diseñadora y redactora."
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytIsabella"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytMariana">
+
+        <ImageView
+            android:id="@+id/imgIsabella"
+            android:layout_width="230dp"
+            android:layout_height="154dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtIsabella"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Isabella Castrillón Calle"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtIsabellaDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Investigadora y diseñadora."
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytTutores"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytIsabella">
+
+        <TextView
+            android:id="@+id/txtTutores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Además, contamos con el apoyo del profesor enlace Juan Guillermo Niño y el mentor asignado Freddy Orlando Villamil."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPreludio"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        android:text="Formulamos entonces varias ideas centradas en una aplicación, una página web y bases de datos."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytTutores" />
+
+    <TextView
+        android:id="@+id/txtApp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:text="Aplicación: está programada por medio de Kotlin Android Studio y consiste en un juego dinámico y un apartado donde se pueda diligenciar un residuo, por ejemplo una botella, y este respondería en qué caneca se bota o qué manualidades puedes realizar con esta (Base de datos). "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreludio" />
+
+    <TextView
+        android:id="@+id/txtWeb"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:text="Página Web: deseamos que sea un espacio en donde la institución pueda encontrar diferentes noticias, anuncios y espacios de debate en torno a la temática ambiental, y pensamos utilizar el lenguaje HTML, CSS y JavaScript."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

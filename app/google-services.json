@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "555827746614",
+    "firebase_url": "https://reducelab-48d0a.firebaseio.com",
+    "project_id": "reducelab-48d0a",
+    "storage_bucket": "reducelab-48d0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555827746614:android:337030b4cac5396d26c597",
+        "android_client_info": {
+          "package_name": "com.reducelab.reducelab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555827746614-gcnm77ta6oe8a1ul7vhefq1o8tkgqr3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKZK2yZpdAwMVSl2W9OT9nhQIWY0XYOIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555827746614-gcnm77ta6oe8a1ul7vhefq1o8tkgqr3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

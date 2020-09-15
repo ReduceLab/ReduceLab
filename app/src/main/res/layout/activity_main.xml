@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnJugar"
+        android:layout_width="194dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="JUGAR"
+        android:contextClickable="true"
+        android:scaleType="fitXY"
+        android:scaleX="1.15"
+        android:scaleY="1.5"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hoja" />
+
+    <ImageButton
+        android:id="@+id/btnBuscador"
+        android:layout_width="194dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="BUSCADOR"
+        android:scaleType="fitXY"
+        android:scaleX="1.15"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInstrucciones"
+        app:srcCompat="@drawable/hoja" />
+
+    <ImageButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="194dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="CERRAR SESIÓN"
+        android:scaleType="fitXY"
+        android:scaleX="1.15"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuienesSomos"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/hoja" />
+
+    <ImageButton
+        android:id="@+id/btnInstrucciones"
+        android:layout_width="194dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="INSTRUCCIONES"
+        android:scaleType="fitXY"
+        android:scaleX="1.15"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugar"
+        app:srcCompat="@drawable/hojavolteada" />
+
+    <ImageButton
+        android:id="@+id/btnQuienesSomos"
+        android:layout_width="194dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="QUIÉNES SOMOS"
+        android:scaleType="fitXY"
+        android:scaleX="1.15"
+        android:scaleY="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscador"
+        app:srcCompat="@drawable/hojavolteada" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

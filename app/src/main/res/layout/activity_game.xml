@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:foregroundGravity="top|left|bottom|right"
+    android:foregroundTint="#FFFFFF"
+    android:isScrollContainer="false"
+    tools:context=".GameActivity">
+
+    <ImageButton
+        android:id="@+id/btnGameAtras"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FDFDFD"
+        android:scaleType="fitXY"
+        android:scaleX="2.5"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_atras" />
+
+    <ImageView
+        android:id="@+id/banano"
+        android:layout_width="78dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="4dp"
+        android:tag="verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bolsa"
+        app:layout_constraintStart_toEndOf="@+id/gaseosa"
+        app:srcCompat="@drawable/banano" />
+
+    <ImageView
+        android:id="@+id/bolsa"
+        android:layout_width="75dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:tag="azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/banano"
+        app:srcCompat="@drawable/bolsa" />
+
+    <ImageView
+        android:id="@+id/botella"
+        android:layout_width="86dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="4dp"
+        android:tag="azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gaseosa"
+        app:layout_constraintStart_toEndOf="@+id/mecato"
+        app:srcCompat="@drawable/botella" />
+
+    <ImageView
+        android:id="@+id/gaseosa"
+        android:layout_width="56dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="4dp"
+        android:tag="gris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/banano"
+        app:layout_constraintStart_toEndOf="@+id/botella"
+        app:srcCompat="@drawable/gaseosa" />
+
+    <ImageView
+        android:id="@+id/manzana"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="15dp"
+        android:tag="verde"
+        app:layout_constraintBottom_toTopOf="@+id/mecato"
+        app:layout_constraintEnd_toStartOf="@+id/vaso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/manzana" />
+
+    <ImageView
+        android:id="@+id/mecato"
+        android:layout_width="49dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="4dp"
+        android:tag="verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botella"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mecato" />
+
+    <ImageView
+        android:id="@+id/vaso"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginBottom="13dp"
+        android:tag="azul"
+        app:layout_constraintBottom_toTopOf="@+id/gaseosa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/manzana"
+        app:srcCompat="@drawable/vaso" />
+
+    <LinearLayout
+        android:id="@+id/LayoutCanecaVerde"
+        android:layout_width="105dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="horizontal"
+        android:tag="verde"
+        app:layout_constraintBottom_toTopOf="@+id/manzana"
+        app:layout_constraintEnd_toStartOf="@+id/LayoutCanecaAzul"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/canecaVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="verde"
+            app:srcCompat="@drawable/caneca_verde" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutCanecaAzul"
+        android:layout_width="105dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="202dp"
+        android:orientation="horizontal"
+        android:tag="azul"
+        app:layout_constraintBottom_toTopOf="@+id/vaso"
+        app:layout_constraintEnd_toStartOf="@+id/LayoutCanecaGris"
+        app:layout_constraintStart_toEndOf="@+id/LayoutCanecaVerde">
+
+        <ImageView
+            android:id="@+id/canecaAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="azul"
+            app:srcCompat="@drawable/caneca_azul" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutCanecaGris"
+        android:layout_width="105dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="264dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bolsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LayoutCanecaAzul">
+
+        <ImageView
+            android:id="@+id/canecaGris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="gris"
+            app:srcCompat="@drawable/caneca_gris" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="181dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="180dp"
+        android:text="Puntaje:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEdiAtras"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtPuntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/caja"
+        android:layout_width="101dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="18dp"
+        android:tag="gris"
+        app:layout_constraintBottom_toTopOf="@+id/bolsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/periodico"
+        app:srcCompat="@drawable/caja" />
+
+    <ImageView
+        android:id="@+id/periodico"
+        android:layout_width="70dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:tag="gris"
+        app:layout_constraintBottom_toTopOf="@+id/manzana"
+        app:layout_constraintEnd_toStartOf="@+id/caja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/periodico" />
+
+    <ImageView
+        android:id="@+id/revista"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:tag="gris"
+        app:layout_constraintBottom_toTopOf="@+id/manzana"
+        app:layout_constraintEnd_toStartOf="@+id/periodico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/revista" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="21dp"
+        android:text="Perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TxtPuntaje"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
